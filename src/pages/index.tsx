@@ -28,7 +28,7 @@ export default function Home() {
           <div className="space-y-8">
             <h1 className="font-sans font-extrabold text-white text-3xl sm:text-4xl md:text-5xl md:leading-tight">
               Welcome to  {' '}
-              <span className="text-[#3F51B5]">
+              <span className="text-[#3EC5E7]">
                 Founderfit.
               </span>
             </h1>
