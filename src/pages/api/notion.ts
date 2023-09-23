@@ -1,6 +1,6 @@
 import { Client } from '@notionhq/client'
-import { CreatePageParameters } from '@notionhq/client/build/src/api-endpoints';
-import { NextApiRequest, NextApiResponse } from 'next';
+import { type CreatePageParameters } from '@notionhq/client/build/src/api-endpoints';
+import {type NextApiRequest, type NextApiResponse } from 'next';
 
 const client = new Client({
     auth: process.env.NOTION_TOKEN
@@ -10,7 +10,7 @@ interface FormPost {
     email: string;
 }
 
-export default async function (req: NextApiRequest, res: NextApiResponse) {
+export default async function notion(req: NextApiRequest, res: NextApiResponse) {
     try {
         
         const data: FormPost = req.body;

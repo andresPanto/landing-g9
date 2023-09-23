@@ -1,4 +1,4 @@
-import { SetStateAction, useState } from "react"
+import { type SetStateAction, useState } from "react"
 import { classNames } from "~/utils/classNamesUnion"
 
 export interface SubscribeProps {
