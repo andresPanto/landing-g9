@@ -45,7 +45,7 @@ const Subscribe: React.FC<SubscribeProps> = ({ setSubscribed }) => {
             focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#3F51B5]`
                 )}
             >
-                Subscribe
+                Join
             </button>
         </form>
     )
