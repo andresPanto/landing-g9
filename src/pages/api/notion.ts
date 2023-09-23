@@ -13,7 +13,7 @@ interface FormPost {
 export default async function notion(req: NextApiRequest, res: NextApiResponse) {
     try {
         
-        const data: FormPost = req.body;
+        const data: FormPost = req.body as FormPost;
         const newRow: CreatePageParameters = {
             parent: {
                 database_id: process.env.NOTION_DB!
@@ -38,8 +38,8 @@ export default async function notion(req: NextApiRequest, res: NextApiResponse) 
         }
 
         await client.pages.create(newRow);
-    } catch (e) {
+    } catch (e: unknown) {
         console.log(e);
     }
-    return res.status(200).json({ status: 'success' })
+     res.status(200).json({ status: 'success' })
 }
