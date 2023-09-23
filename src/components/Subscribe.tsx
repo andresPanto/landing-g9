@@ -25,7 +25,9 @@ const Subscribe: React.FC<SubscribeProps> = ({ setSubscribed }) => {
     return (
         <form
             className="font-secondary flex flex-shrink w-full px-2 max-w-lg mx-auto justify-center"
-            onSubmit={void handleSubmit}
+            onSubmit={(event) =>
+                void handleSubmit(event)
+              }
         >
             <input
                 className="border border-r-0 border-[#C5CAE9] rounded-l-lg w-2/3
