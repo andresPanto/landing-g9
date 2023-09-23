@@ -9,7 +9,7 @@ const Subscribe: React.FC<SubscribeProps> = ({ setSubscribed }) => {
     const [email, setEmail] = useState('')
     const [clicked, setClicked] = useState(false)
 
-    async function handleSubmit(e: any) {
+    function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault()
         setClicked(true)
         //   await fetch('api/update-notion', {
